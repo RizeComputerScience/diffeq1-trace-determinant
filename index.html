@@ -3063,7 +3063,7 @@ function para(h) { return '<div class="col prose"><p>' + h + '</p></div>'; }
 function page() {
   return header('Linear Phase Portraits and the Trace-Determinant Plane', [['#sec-map', 'One Point'], ['#sec-parabola', 'The Parabola'], ['#sec-direction', 'Direction'], ['#sec-family', 'A Family'], ['#sec-back', 'Back to the Textbook']]) +
     '<main id="top">' + hero({ kicker: 'Differential Equations · Unit 10', title: 'Linear Phase Portraits and the Trace-Determinant Plane',
-      dek: 'Use this with Sections 3.3, 3.4 and 3.7 of Blanchard, Devaney and Hall, after the Unit 10 explainer The Trace-Determinant Plane. Drag a point on the map and watch the phase portrait it stands for.' }) +
+      dek: 'Use this with Sections 3.3, 3.4 and 3.7 of Blanchard, Devaney and Hall, after the section The Trace-Determinant Plane in the Unit 10 Reading Guide, Part 2. Drag a point on the map and watch the phase portrait it stands for.' }) +
 
     sec('sec-map', '1', 'One Point Is One System', '') +
     para(P('The first panel is the map, the trace-determinant plane. The dot at `(T, D)` stands for the matrix `A =`') + ' ' + matH(['0', '1', '−D', 'T'], 'A') + P(', whose trace is `T` and determinant is `D`. It is the system of `y″ − Ty′ + Dy = 0`, with `v = y′`. The second panel is that system’s phase portrait in the `(y, v)`-plane, with its eigenvector lines when the eigenvalues are real.')) +
