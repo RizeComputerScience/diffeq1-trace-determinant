@@ -2723,7 +2723,7 @@ function mapSVG(c) {
     center: 'on the positive D-axis, where the centers are', rep: 'on the parabola', zero: 'on the T-axis', origin: 'at the origin' }[t];
   var aria = 'The trace-determinant plane, T across from −6 to 6 and D up from −6 to 10, with the parabola T² = 4D. Below the T-axis are saddles; between the T-axis and the parabola, sinks on the left and sources on the right; above the parabola, spiral sinks on the left, spiral sources on the right, and centers on the positive D-axis. ' +
     (fam ? 'The family’s path runs down the line T = −2 from D = 5 at a = −4 to D = −3 at a = 4. ' : '') + 'The dot is at (T, D) = (' + n2(T) + ', ' + n2(D) + '), ' + where + '.';
-  g += '<svg viewBox="0 0 ' + MAP.w + ' ' + MAP.h + '" role="img" aria-label="' + esc(aria) + '"><defs>' + clipDef(cid, b) + '</defs>';
+  g += '<svg viewBox="0 0 ' + MAP.w + ' ' + MAP.h + '" role="group" aria-label="' + esc(aria) + '"><defs>' + clipDef(cid, b) + '</defs>';
   g += '<g clip-path="url(#' + cid + ')">';
   var rp = regionPath(pn, t);
   if (rp) g += '<path class="td-region" d="' + rp + '" style="fill:var(--hint-tint, var(--soft))"/>';
